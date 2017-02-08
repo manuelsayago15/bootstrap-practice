@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Forms - Bootstrap</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="estilos.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<br>
+		<form action="" class="form-inline">
+			<div class="form-group">
+				<label class="sr-only" for="nombre">Nombre:</label>
+				<input class="form-control" id="nombre" type="text" placeholder="Nombre:">
+			</div>
+
+			<div class="form-group">
+				<div class="input-group">
+					<label class="sr-only" for="correo">Correo:</label> <!-- sr-only es una clase para mostrar en este caso el label, solamente en dispositivos de lectura. Screen Readers -->
+					<div class="input-group-addon">@</div>
+					<input class="form-control" id="correo" type="text" placeholder="Correo:">
+				</div>
+			</div>
+
+			<div class="checkbox"> <!-- Aquí es la forma de hacerlo con Bootstrap para que
+			quede uno al lado del otro. Se aplica un div con la clase checkbox
+			y a su vez dentro de él un label que contiene el input. Así "Recuérdame"
+			queda al lado del checkbox-->
+				<label>
+					<input type="checkbox" name="" id=""> Recuérdame
+				</label>
+			</div>
+			
+			<button class="btn btn-primary">Enviar</button>
+		</form>		
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

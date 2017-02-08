@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Forms - Bootstrap</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="estilos.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<br>
+		<!-- También se puede encerrar todo el form dentro de la etiqueta <fieldset></fieldset>
+		con el atributo disabled y así es más rápido deshabilitar todos los elementos-->
+		<form action="" class="form-horizontal">
+			<div class="form-group has-success"><!-- Son estilos con colores y su uso depende para qué los vayas a utilizar y va de la mano con el control-label. Sin él no funcina del todo y puede haber problemas -->
+				<label class="control-label col-md-2" for="nombre">Nombre:</label>
+				<div class="col-md-10">
+					<input class="form-control" id="nombre" type="text" placeholder="Nombre:">
+				</div>
+			</div>
+
+			<!-- Los formularios horizontales se les puede aplicar las columnas del grid system, de hecho es así que se arma este ejercicio -->
+			<div class="form-group has-warning">
+				<label for="nombre" class="control-label col-md-2">Nombre:</label> <!-- control-label toma el ancho a 100%. Centra verticalmente y permite trabajar con columnas-->
+				<div class="col-md-10">
+					<p class="form-control-static">Manuel Sayago</p>
+				</div>
+			</div>
+
+			<div class="form-group has-error">
+				<label for="correo" class="control-label col-md-2">Correo:</label>
+				<div class="col-md-10">
+					<input class="form-control" id="nombre" type="text" placeholder="Nombre:">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="checkbox col-md-2 col-md-offset-2"><!-- el offset desplaza 2 columnas a la derecha -->
+					<label>
+						<input type="checkbox"> Recuérdame
+					</label>
+				</div>
+			</div>
+			
+			<!-- Aquí al botón hay que ponerlo dentro de un form-group porque aunque sea un solo elemento estamos trabajando con columnas y a este hay que ponérselas también-->
+			<div class="form-group">
+				<div class="col-md-2 col-md-offset-2">
+					<button class="btn btn-primary">Enviar</button> <!--Disabled sirve para deshabilitar cualquier elemento -->
+				</div>
+			</div>
+		</form>		
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
