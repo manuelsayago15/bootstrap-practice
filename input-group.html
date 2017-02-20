@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Dropdown</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+	<div class="container-fluid">
+		<br>
+		<div class="row">
+			<div class="col-md-3">
+				
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-addon">Correo:</span>
+						<input type="text" class="form-control">
+					</div>		
+				</div>
+
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-addon">$</span>
+						<input type="text" class="form-control">
+						<span class="input-group-addon">0.00</span>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-addon">
+							<input type="checkbox">
+						</span>
+						<input type="text" class="form-control" disabled>
+						<!-- Con JS se puede hacer que se desbloquee el input al darle clic al checkbox -->
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="input-group">
+						<input type="text" class="form-control">
+						<span class="input-group-addon">
+							<input type="radio" name="radio1">
+						</span>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-addon">
+							<input type="radio" name="radio1">
+						</span>
+						<input type="text" class="form-control">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-btn">
+							<button class="btn btn-primary">Botón</button>
+						</span>
+						<input type="text" class="form-control">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-btn">
+							<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+								Botón <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Item #1</a></li>
+								<li><a href="#">Item #2</a></li>
+								<li><a href="#">Item #3</a></li>
+								<li><a href="#">Item #4</a></li>
+							</ul>
+						</span>
+						<input type="text" class="form-control">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-btn">
+							<button class="btn btn-primary">Botón</button>
+							<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Item #1</a></li>
+								<li><a href="#">Item #2</a></li>
+								<li><a href="#">Item #3</a></li>
+								<li><a href="#">Item #4</a></li>
+							</ul>
+						</span>
+						<input type="text" class="form-control">
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+
+	<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>-->
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
