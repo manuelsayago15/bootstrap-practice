@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="estilos.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<title>Collapse component/Acordeón en Bootstrap</title>
+</head>
+<body>
+	<br>
+	<div class="container">
+		<br>
+		<a href="#seccion" class="btn btn-primary" data-toggle="collapse">Mostrar / Ocultar</a>
+		<div class="collapse" id="seccion"><!--Fijarse en el href de a que lleva #
+		y el id aqui con el mismo nombre que en href hace que se muestre y oculte el contenido -->
+			<br>
+			<div class="well">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue tellus, consectetur ut ultricies sit amet, cursus in tellus. Sed ac nunc ex.</p>
+			</div>
+		</div>
+
+		<br><br>
+		<!-- Acordeón -->
+
+		<div class="panel-group" id="accordion" role="tab-list">
+			<!-- Begin 1st Panel -->
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="heading1">
+					<h4 class="panel-title">
+					<a href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+						Encabezado #1
+					</a>
+					</h4>
+				</div>
+
+				<div id="collapse1" class="panel-collapse collapse in"><!-- La clase in es para indicar
+				cual panel queremos que esté abierto de una vez-->
+					<div class="panel-body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue tellus, consectetur ut ultricies sit amet, cursus in tellus. Sed ac nunc ex.</p>
+					</div>
+				</div>
+			</div>
+			<!-- End 1st Panel -->
+
+			<!-- Begin 2nd Panel -->
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="heading2">
+					<h4 class="panel-title">
+					<a href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+						Encabezado #2
+					</a>
+					</h4>
+				</div>
+
+				<div id="collapse2" class="panel-collapse collapse">
+					<div class="panel-body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue tellus, consectetur ut ultricies sit amet, cursus in tellus. Sed ac nunc ex.</p>
+					</div>
+				</div>
+			</div>
+			<!-- End 2nd Panel -->
+
+			<!-- Begin 3rd Panel -->
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="heading3">
+					<h4 class="panel-title">
+					<a href="#collapse3" data-toggle="collapse" data-parent="#accordion">
+						Encabezado #3
+					</a>
+					</h4>
+				</div>
+
+				<div id="collapse3" class="panel-collapse collapse">
+					<div class="panel-body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue tellus, consectetur ut ultricies sit amet, cursus in tellus. Sed ac nunc ex.</p>
+					</div>
+				</div>
+			</div>
+			<!-- End 3rd Panel -->
+
+		</div>
+	</div>
+
+	<!-- <script src="https://code.jquery.com/jquery-latest.js"></script>-->
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
