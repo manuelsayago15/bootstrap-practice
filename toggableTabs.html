@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="estilos.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<title>Toggable Tabs en Bootstrap</title>
+</head>
+<body>
+	<br>
+	<div class="container">
+		<br>
+		<div class="row">
+			<div class="col-md-5">
+				
+				<div role="tabpanel">
+					
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active">
+							<a href="#seccion1" aria-controls="seccion1" data-toggle="tab" role="tab">
+								Seccion #1
+							</a>
+						</li>
+
+						<li role="presentation">
+							<a href="#seccion2" aria-controls="seccion2" data-toggle="tab" role="tab">
+								Seccion #2
+							</a>
+						</li>
+
+						<li role="presentation">
+							<a href="#seccion3" aria-controls="seccion3" data-toggle="tab" role="tab">
+								Seccion #3
+							</a>
+						</li>
+
+					</ul>
+
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="seccion1">
+							<h3>Seccion #1</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue tellus, consectetur ut ultricies sit amet, cursus in tellus. Sed ac nunc ex.</p>
+						</div>
+
+						<div role="tabpanel" class="tab-pane" id="seccion2">
+							<h3>Seccion #2</h3>
+							<p>Lorem ipsum dolor sit amet, cursus in tellus. Sed ac nunc ex.</p>
+						</div>
+
+						<div role="tabpanel" class="tab-pane" id="seccion3">
+							<h3>Seccion #3</h3>
+							<p>consectetur adipiscing elit. Sed augue tellus, consectetur ut ultricies sit amet, cursus in tellus. Sed ac nunc ex.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <script src="https://code.jquery.com/jquery-latest.js"></script>-->
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
